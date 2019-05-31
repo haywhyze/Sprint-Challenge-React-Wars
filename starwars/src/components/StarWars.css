@@ -1,0 +1,27 @@
+.star-wars-container ul{
+  margin: 0 auto;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.char-details {
+  background-color: rgba(244,244,244, .7);
+  box-shadow: inset 0px 0px 1em #000;
+  margin: 0 auto;
+  padding: .5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 30rem;
+  flex-direction: column;
+}
+
+.char-details p {
+  font-size: 80%;
+  color: #666;
+}
