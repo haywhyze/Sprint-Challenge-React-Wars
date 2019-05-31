@@ -3,8 +3,8 @@ import StarWarsChar from './StarWarsChar';
 import './StarWars.css';
 
 export default ({ starWarsChars }) => (
-  <div>
-    <ul className="starWarsContainer">
+  <div className="star-wars-container">
+    <ul>
       {
         starWarsChars.map(starWarsChar => (
           <li 
