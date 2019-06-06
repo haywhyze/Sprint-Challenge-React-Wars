@@ -24,33 +24,50 @@ In this challenge, create a web page that presents a styled list of Star Wars ch
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
+- [x] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
-- [ ] What does it mean to _think_ in react?
+    Answer -> - ReactJS is a Javascript library that allows for easy development of web apps user interfaces using simple, declarative and reusable components.
+   - The problems React JS tries to solve can be classified as follows:
+     - DOM manipulation in large web applications that depends on very dynamic data can be expensive and thus affects performance. React tries to solve this by providing a virtual DOM to operate on and then compares with the real DOM, and then does the minimum DOM manipulation to arrive at a new state.
+     - Traditionally, building a large frontend web application requires a lot of objects that have individual states and interacting with each other in different ways. This is hard to maintain and also difficult to trace bugs. In contrast, a well thought out React App have it's state mostly constrained to a single place. As a result, the app is made up of ordinary functions that react to the state changing, and sends the result to React to re-render the components involved. This flow of execution and data binding is a lot easier to think about and trace bugs if possible.
 
-- [ ] Describe state.
+- [x] What does it mean to _think_ in react?
 
-- [ ] Describe props.
+    Answer -> Thinking in react involves reasoning about the app from mock up to completion in well structured manner to fully utilize the advantanges React offers. If you are to think in React, these steps could serve as a guide:
+     - Start with a mock of the data model and the design and visualize how each relates.
+     - Next, is to break the user interface (the design mock up) into reusable simple components using the single responsibilty principle.
+     - After identifying the components, you should build out a static version of the app with a view to match the design mock up if available.
+     - Identify the minimum representation of your application's UI state to add interactivty.
+     - Identify wher the state would live. Ideally, state should live in the highest possible hierachy. For instatnce if two component shares a state, the state should live at least a level above them to give both of them access to the state.
+     - When data flows through the app via components higher up the hierachical tree to children components using props, it would make sense to also add an inverse data flow so that components deep in the hierarchy can update the state that lives in a parent container.
+
+- [x] Describe state.
+
+    Answer -> State in react is an object that determines how that component renders & interact with other components.
+
+- [x] Describe props.
+
+    Answer -> Props is short for properties, and it can best be described as a way of passing data from component to component, essentially from parent to child components.
 
 ## Project Set Up
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add PM as collaborator on Github.
-- [ ] Clone your OWN version of Repo (Not Lambda's by mistake!)
-- [ ] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
-- [ ] Change directories into `./starwars` (`cd starwars`) and run `yarn install` to retrieve all needed dependencies.
-- [ ] Once you have installed the _node_modules_, run `yarn start or` to get your server up and running.
-- [ ] With the server up and running, open Chrome and head over to `localhost:3000` and view your beautiful app. Maybe it's not _that_ pretty... _yet_, your goal is to ensure this project becomes a thing of beauty.
+- [x] Create a forked copy of this project.
+- [x] Add PM as collaborator on Github.
+- [x] Clone your OWN version of Repo (Not Lambda's by mistake!)
+- [x] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
+- [x] Change directories into `./starwars` (`cd starwars`) and run `yarn install` to retrieve all needed dependencies.
+- [x] Once you have installed the _node_modules_, run `yarn start or` to get your server up and running.
+- [x] With the server up and running, open Chrome and head over to `localhost:3000` and view your beautiful app. Maybe it's not _that_ pretty... _yet_, your goal is to ensure this project becomes a thing of beauty.
 Follow these steps for completing your project.
 - [ ] Implement the project on this Branch, committing changes regularly.
 - [ ] Push commits: git push origin `<firstName-lastName>`.
 
 Follow these steps for completing your project:
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
-- [ ] Add your Project Manager as a Reviewer on the Pull-request.
+- [x] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
+- [x] Add your Project Manager as a Reviewer on the Pull-request.
 - [ ] PM then will count the HW as done by  merging the branch back into master.
 
 Please note:
